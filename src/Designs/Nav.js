@@ -18,7 +18,7 @@ export default function Nav() {
                                     <option value="2">Dairy</option>
                                </select>
                               <input type="search" class="form-control" placeholder="What Do You Need? " aria-label="Search" aria-describedby="search-addon" />
-                              <button type="button" class="btn btn-green">Search</button>
+                              <button type="button" class="btn-green">Search</button>
                             </div>
                         
                         </div>

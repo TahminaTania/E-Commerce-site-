@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
-   
+    width: 100%;   
 }
+
 ul li,.billing div{
     display: inline;
     padding-left:10px;
@@ -21,6 +21,9 @@ ul li,.billing div{
 }
 
 .btn-green{
-    color: rgb(97, 153, 14);
-    padding:5px;
+    background: rgb(97, 153, 14);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding:10px;
 }
