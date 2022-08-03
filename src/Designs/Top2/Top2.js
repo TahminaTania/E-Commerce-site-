@@ -1,7 +1,7 @@
 import './top.css';
 import logo from '../Images/logo.webp'
 import React, { useState } from 'react';
-import Nav from './Nav';
+// import Nav from './Nav';
 import { MdFavorite, MdShoppingCart} from 'react-icons/md';
 
 export default function () {

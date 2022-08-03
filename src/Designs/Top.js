@@ -2,7 +2,8 @@ import React from 'react';
 import './top.css'
 import { AiFillMail} from 'react-icons/ai';
 import {FaFacebookF, FaTwitter , FaLinkedin , FaPinterestP, FaUserAlt} from 'react-icons/fa';
-import Top2 from './Top2';
+import { social } from './Top2/top2Data';
+// import Top2 from './Top2';
 
 export default function Top() {
   return (
@@ -26,11 +27,15 @@ export default function Top() {
                                         <div className='col-md-12'>
                                             <div className='row'>
                                                 <div className='col-md-4'>
-                                                    <ul>
-                                                        <li><FaFacebookF/></li>
-                                                        <li><FaTwitter/></li>
-                                                        <li><FaPinterestP/></li>
-                                                        <li><FaLinkedin/></li>
+                                                   <ul className='social-icons'>
+                                                       {social.map((socialIcon) => {
+                                                          const { id, url, icon } = socialIcon;
+                                                          return (
+                                                          <li key={id}>
+                                                            <a href={url}>{icon}</a>
+                                                           </li>
+                                                        );
+                                                      })}
                                                     </ul>
                                                 </div>
                                                 <div className='col-md-4'>
