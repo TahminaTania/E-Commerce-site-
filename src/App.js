@@ -1,7 +1,7 @@
 import './App.css';
-// import Top2 from './Designs/Top2';
-import Top from './Designs/Top';
+import Top from './Designs/Top2/Top';
 import TopNav from './Designs/Top2/TopNav';
+
 
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
       <TopNav/>
       Menu Bar
 
-      {/* <Top2/> */}
       
                  
     </main>

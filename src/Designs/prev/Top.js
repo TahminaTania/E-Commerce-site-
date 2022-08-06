@@ -6,6 +6,7 @@ import { social } from './Top2/top2Data';
 // import Top2 from './Top2';
 
 export default function Top() {
+    
   return (
     <div className='top'>
         <div className='top-sections'>
