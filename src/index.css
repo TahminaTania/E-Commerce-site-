@@ -159,7 +159,7 @@ Navbar
 */
 nav {
   background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  /* box-shadow: var(--light-shadow); */
 }
 .nav-header {
   display: flex;
@@ -261,4 +261,50 @@ nav {
 }
 .cart-icons p:hover{
   color: var(--clr-primary-7);
+}
+
+.contact{
+  display: flex;
+  padding-left: 20px;
+}
+.cust-Serv{
+  padding-left: 30px;
+}
+.phn-icon{
+  color:green;
+  font-size: 20px;
+  background-color: rgb(246, 246, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+select{
+  border: none;
+  background-color: rgb(97, 153, 14);
+}
+option:not(:checked) {
+  background-color: rgb(97, 153, 14);
+}
+option:checked {
+  background-color: whitesmoke;
+}
+
+select option{
+  margin: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.Menu-icon{
+  border: none;
+  font: 30px;
+}
+button{
+  background-color: none;
 }

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import {FaArrowAltCircleLeft , FaArrowAltCircleRight} from 'react-icons/fa';
 import Fish from './ItemData';
-import { Slide } from '@mui/material';
-import { width } from '@mui/system';
+
 
 
 const Container=styled.div`
@@ -31,7 +30,7 @@ const Arrow =styled.div`
     margin: auto;
     cursor: pointer;
     opacity:0.5;
-    z-index:2;
+    // z-index:2;
 `;
 const Wrapper=styled.div`
     height:100%;
