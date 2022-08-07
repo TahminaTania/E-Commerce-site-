@@ -1,6 +1,7 @@
 import './App.css';
 import Top from './Designs/Top2/Top';
 import TopNav from './Designs/Top2/TopNav';
+import Slider from './Designs/SideBar/Slider';
 
 
 
@@ -9,7 +10,8 @@ function App() {
     <main>
       <Top/>
       <TopNav/>
-      Menu Bar
+       <Slider/>
+
 
       
                  
