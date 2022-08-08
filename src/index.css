@@ -283,15 +283,25 @@ nav {
   border-radius: 50%;
 }
 
-select{
+.departments-select{
   border: none;
   background-color: rgb(97, 153, 14);
+
+
 }
 option:not(:checked) {
   background-color: rgb(97, 153, 14);
 }
 option:checked {
   background-color: whitesmoke;
+}
+select:checked{
+  border: none;
+}
+select{
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid #ced4da;;
 }
 
 select option{
@@ -307,4 +317,9 @@ select option{
 }
 button{
   background-color: none;
+}
+
+.Allcatag option{
+  font-size: large;
+  background-color: white;
 }

@@ -30,9 +30,12 @@ ul li,.billing div{
     border: none;
     padding:10px;
 }
-
-.fishimg img{
+.types{
+    background-color: none;  
+}
+.types img{
     height: 250px;
     width: 350px;
     background-color: rgb(226, 225, 225);
+    opacity:2;
 }

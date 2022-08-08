@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {FaArrowAltCircleLeft , FaArrowAltCircleRight} from 'react-icons/fa';
-import Fish from './ItemData';
+import cetagories from './ItemData';
 
 
 
 const Container=styled.div`
     width:100%;
-    height:40vh;
+    height:50vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#d1c6c6;
     position: relative;
     overflow:hidden;
@@ -16,9 +18,9 @@ const Container=styled.div`
 
 const Arrow =styled.div`
     height: 50px;
-    width: 50px;
-    background-color: #fff7f7;
-    border-radius:50%;
+    width: 30px;
+    font-size:40px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,25 +35,25 @@ const Arrow =styled.div`
     // z-index:2;
 `;
 const Wrapper=styled.div`
-    height:100%;
+    // height:60%;
     width:100%;
     display:flex;
     transform: translateX(${props => props.slideIndex * -40}vw);
+
     `;
 
-const FishCont=styled.div`
+const ContBox=styled.div`
     width:100vw;
-    height:100%;
+    height:80%;
     // display:flex;
     align-items:center;
-    background-color:white;
+    background-color:#d1c6c6;
     margin:10px;
 
 `;
 const ImageCont=styled.div`
-    height:100%;
+    height:0%;
     margin:15px;
-
 `;
 const Image=styled.div`
 height:50px;
@@ -60,6 +62,11 @@ width:50px;
 const InfoCont=styled.div`
 width:100%;
 display:flex;
+align-items:center;
+justify-content:center;
+background-color:#d1c6c6;
+margin:10px;
+opacity:1;
 
 `;
 
@@ -68,6 +75,12 @@ padding: 0 20px;
 
 `;
 const Name= styled.h6`
+font-size: larger;
+font-weight: bolder;
+padding: 10px 20px;
+background-color:white;
+cursor: pointer;
+
 `;
 
 export default function Slider() {
@@ -86,18 +99,18 @@ export default function Slider() {
             <FaArrowAltCircleLeft onClick={()=>handleClick('left')}/>
           </Arrow>
           <Wrapper slideIndex={slideIndex}>
-            {Fish.map((fish) => {
-                  const { id,name,price,image } = fish;
+            {cetagories.map((cetagories) => {
+                  const { id,name,price,image } = cetagories;
                   return (
-                    <FishCont key={id}>
-                      <ImageCont className='fishimg'>
+                    <ContBox key={id}>
+                      <ImageCont className='types'>
                         <img src={image}></img>
                       </ImageCont>
                       <InfoCont>
-                        <Name >{name}</Name>
+                        <Name onClick={''}>{name}</Name>
                         <Price>{price}</Price>
                       </InfoCont>
-                    </FishCont>
+                    </ContBox>
                     );
                   })}
           </Wrapper>
@@ -110,15 +123,3 @@ export default function Slider() {
 
 
 
-// <ul className=''>
-// {Fish.map((fish) => {
-//     const { id,name,price, image } = fish;
-//     return (
-//     <li key={id}>
-//       <div><img src={image}></img></div>
-//       <div>{price}</div>
-//       <div>{name}</div>
-//     </li>
-// ); 
-// })}
-// </ul>

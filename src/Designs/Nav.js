@@ -27,7 +27,7 @@ export default function Nav() {
                         <div className='col-md-3'>
                             <AllDepartment>
                             <AiOutlineMenu/>
-                             <select>
+                             <select className='departments-select'>
                                     <option selected>All Departments</option>
                                     <option value="1">Fish</option>
                                     <option value="2">Meat</option>
@@ -40,7 +40,7 @@ export default function Nav() {
                         </div>
                         <div className='col-md-6'>
                            <div class="input-group"> 
-                              <select class="form-select-sm px-2">
+                              <select class="form-select-sm px-2 Allcatag">
                                     <option selected>All Cetagories</option>
                                     <option value="1">Fish</option>
                                     <option value="2">Meat</option>
