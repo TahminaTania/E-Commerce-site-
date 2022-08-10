@@ -31,11 +31,38 @@ ul li,.billing div{
     padding:10px;
 }
 .types{
-    background-color: none;  
+    background-color: white; 
 }
 .types img{
-    height: 250px;
+    height: 200px;
     width: 350px;
     background-color: rgb(226, 225, 225);
-    opacity:2;
+margin: 20px;
 }
+
+.Wrapper{
+    width:100%;
+    display:flex;
+    /* transform: translateX(${props => props.slideIndex * -40}vw); */
+
+}
+.ContBox{
+    /* width:100vw; */
+    height:80%;
+    /* display:flex; */
+    align-items:center;
+    background-color:#d1c6c6;
+    margin:10px;
+    /* cursor: pointer; */
+
+ }  
+
+ .InfoCont{
+    /* width:100%; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#d1c6c6;
+    margin:10px;
+    opacity:1;
+ }
