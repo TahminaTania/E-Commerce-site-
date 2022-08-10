@@ -1,12 +1,18 @@
 import React from 'react';
+import {MdOutlineFavoriteBorder, MdOutlineShoppingCart , MdOutlineSearch} from 'react-icons/md'
 
-const Menu = ({items}) => {
+const Items = ({items}) => {
   return <div className='section-center'>
     {items.map((menuItem)=>{
       const {id,title,img,price}=menuItem;
       return <article key={id} className='menu-item'>
-        <div>
+        <div className='item-box'>
           <img src={img} alt={title} className='photo'/>
+          <div className='items-icon'>
+            <MdOutlineFavoriteBorder className='icn'/>
+            <MdOutlineSearch className='icn'/>
+            <MdOutlineShoppingCart className='icn'/>
+          </div>
         </div>
         <div className='item-info'>
             <h4>{title}</h4>
@@ -18,4 +24,4 @@ const Menu = ({items}) => {
   </div>
 };
 
-export default Menu;
+export default Items;
