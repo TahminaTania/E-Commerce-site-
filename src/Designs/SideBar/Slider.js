@@ -62,7 +62,7 @@ export default function Slider() {
   const wrapperArea =useRef();
   useEffect(()=> {
     console.log("Value is", wrapperArea.current.scrollWidth,"and ",  wrapperArea.current.offsetWidth);
-    SetSlideWidth(wrapperArea.current.scrollWidth - wrapperArea.current.offsetWidth )
+    SetSlideWidth(wrapperArea.current.scrollWidth- wrapperArea.current.offsetWidth )
   },[]);
 
   const handleClick=()=>{
@@ -75,7 +75,7 @@ export default function Slider() {
             <FaArrowAltCircleLeft onClick={()=>handleClick()}/>
           </Arrow>
           <motion.div ref={wrapperArea} className='wrapperArea'>
-            <motion.div drag="x" dragConstraints={{ right:500, left:-500 }}  className='Wrapper' slideIndex={slideIndex}>
+            <motion.div drag="x" dragConstraints={{ right:slideWidth, left:slideWidth }}  className='Wrapper' slideIndex={slideIndex}>
               {cetagories.map((cetagories) => {
                     const { id,name,price,image } = cetagories;
                     return (

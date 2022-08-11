@@ -97,6 +97,7 @@ Menu
 }
 .btn-container {
   margin-bottom: 4rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }

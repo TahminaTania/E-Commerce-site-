@@ -53,7 +53,7 @@ export default function() {
             <Right>
                   <ul>
                     <li>
-                        <select class="form-select-sm">
+                        <select class="">
                                 <option selected>Language</option>
                                 <option value="1">English</option>
                                 <option value="2">Bangla</option>

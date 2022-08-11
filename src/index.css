@@ -263,25 +263,9 @@ nav {
   color: var(--clr-primary-7);
 }
 
-.contact{
-  display: flex;
-  padding-left: 20px;
-}
-.cust-Serv{
-  padding-left: 30px;
-}
-.phn-icon{
-  color:green;
-  font-size: 20px;
-  background-color: rgb(246, 246, 240);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 20px;
-  border-radius: 50%;
-}
+
+
+
 
 .departments-select{
   border: none;
