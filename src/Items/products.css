@@ -66,7 +66,7 @@ p {
 .section {
   width: 90vw;
   margin: 0 auto;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
 }
 
 @media screen and (min-width: 992px) {
@@ -82,7 +82,7 @@ Menu
 */
 
 .menu {
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
 }
 .title {
   text-align: center;
@@ -130,8 +130,8 @@ Menu
 }
 .menu-item {
   /* display: grid; */
-  gap: 1rem 2rem;
-  max-width: 25rem;
+  /* gap: 1rem 2rem; */
+  /* max-width: 25rem; */
 }
 .item-box{
   background-color: rgb(229, 235, 252);
@@ -193,7 +193,21 @@ Menu
   transition : 1s;
   transform : rotate3d(0 , 1 , 0,180deg)
 }
+.offers{
+  height: 250px;
+  margin: 20px;
+}
+.Summer_fruits{
+background-image: url('/src/Bannaer/xbanner-1.jpg.pagespeed.ic.aDN3QrExt6.webp');
+background-size: contain;
+background-repeat: no-repeat;
+}
+.Summer_fruits2{
+  background-image: url('/src/Bannaer/xbanner-2.jpg.pagespeed.ic.-2eeuFVLcY.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
 
+}
 @media screen and (min-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;

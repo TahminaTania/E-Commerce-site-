@@ -263,21 +263,8 @@ nav {
   color: var(--clr-primary-7);
 }
 
-
-
-
-
-.departments-select{
-  border: none;
-  background-color: rgb(97, 153, 14);
-
-
-}
 option:not(:checked) {
   background-color: rgb(97, 153, 14);
-}
-option:checked {
-  background-color: whitesmoke;
 }
 select:checked{
   border: none;

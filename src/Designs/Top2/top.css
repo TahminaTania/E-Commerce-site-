@@ -1,6 +1,9 @@
-.top{
-    background-color: rgb(231, 230, 230);
 
+.toppest{
+    background-color: rgb(231, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 .top-sections{
     display: flex;
@@ -10,17 +13,46 @@
 }
 
 ul li,.billing div{
+    /* display: inline;
+    padding-left:10px; */
+  }
+
+.toppest-header ul li{
+    list-style: none;
     display: inline;
     padding-left:10px;
-  }
+
+  }  
 .header-mail{
-    position: relative;
-    left: -10px;
+    position:relative;
+    left:0;
     width: 100px;
+    padding-right: 10px;
+    border-right:1px solid  #d1c6c6;
 
 }
-.logIn{
-    padding-left:50px ;
+.social-icons a{
+    padding: 0px 10px;
+}
+.Language{
+    background-color:rgb(231, 230, 230) ;
+    padding: 5px 10px;
+    border: none;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logIn, .select{
+    padding: 0px 20px;
+    border-left:1px solid  #d1c6c6;
+    /* padding-left:50px ; */
+}
+.logIn a{
+    text-decoration: none;
+    color:black;
 }
 
 .btn-green{
@@ -63,16 +95,69 @@ ul li,.billing div{
     padding-left: 5px;
  
 }
+
+/* ######-------------- All DEPARTMENT CUSTOM SELECT MENU */
+
+.dd{
+    width: 100%;
+    height: 100%;
+    /* margin: 100px auto; */
+    position: relative;
+}
+.dd-icon{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.dd .dd-btn{
+    padding: 10px 20px;
+    background: rgb(97, 153, 14);
+    font-weight: bolder;
+    /* border: 2px solid green; */
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.dd .dd-content{
+    /* position: absolute; */
+    /* top:110%; */
+    padding: 5px;
+    background-color: whitesmoke;
+    color:black;
+    font-weight: 30px;
+    width: 100%;
+    height: 100%;
+    margin-bottom:10px ;
+    transition: 0.1s;
+}
+
+.dd .dd-content .dd-item{
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.dd-item:hover{
+    background-color:rgb(97, 153, 14);
+}
+
+
+
+
+/*------------------ #### Cover */
+
+
 .cover{
 padding: 20px;
 }
 .nav-img{
     width: 100%;
-    background-image: url('https://www.kindpng.com/picc/m/115-1153516_transparent-background-vegetables-fruits-png-png-download.png');
+    background-image: url('/src/Bannaer/banner.webp');
     background-repeat: no-repeat;
     background-size:cover;  
     display: flex;
-    height: 100%;
+    height: 350px;
     width: 100%;
     padding: 20px;
     margin-top: 15px;
@@ -96,6 +181,10 @@ padding: 20px;
     color: black;
     font-weight: bolder;
     font-size: 35px;
+}
+.cover-elements a{
+text-decoration: none;
+padding: 10px 15px;
 }
 .navC{
     height: 100%;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {BsFillTelephoneFill} from 'react-icons/bs';
+import AllDept from './Top2/AllDept';
 
 const Selections=styled.div`
 width:100%;
@@ -19,24 +20,13 @@ padding:10px;
 export default function Nav() {
   return (
 
-    <Selections>
+    <Selections className='mb-5'>
         <div className='container navC' >
             <div className='row'>
                 <div className='col-md-12'>
                     <div className='row'>
                         <div className='col-md-3'>
-                            <AllDepartment>
-                            <AiOutlineMenu/>
-                             <select className='departments-select'>
-                                    <option selected>All Departments</option>
-                                    <option value="1">Fish</option>
-                                    <option value="2">Meat</option>
-                                    <option value="2">Veg</option>
-                                    <option value="2">Dairy</option>
-                               </select>
-                          
-                             
-                            </AllDepartment>
+                            <AllDept/>        
                         </div>
                         <div className='col-md-9'>
                             <div className='row'>
@@ -76,7 +66,7 @@ export default function Nav() {
                                             <h6>FRUIT FRESH</h6>
                                             <h2>Vegetable <br/>100% Organic</h2>
                                             <p>Free Pickup and Delivery Available</p>
-                                            <button className='btn-green'>SHOP NOW</button>
+                                            <a href="#" class="btn-green">SHOP NOW</a>
                                         </div>
                                     </div>
 
