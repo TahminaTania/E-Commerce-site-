@@ -1,9 +1,9 @@
 import React from 'react';
 import './Blog.css';
 import { FaRegComment , FaRegCalendarAlt } from 'react-icons/fa';
-import blog1 from '/home/tania/Documents/React/esite/src/Bannaer/Blig-item1.webp';
-import blog2 from '/home/tania/Documents/React/esite/src/Bannaer/Blog_item2.webp';
-import blog3 from '/home/tania/Documents/React/esite/src/Bannaer/Blog-item3.webp';
+import blog1 from "../../../src/Bannaer/Blig-item1.webp"
+import blog2 from '../../../src/Bannaer/Blog_item2.webp';
+import blog3 from '../../../src/Bannaer/Blog-item3.webp';
 
 
 
@@ -41,7 +41,7 @@ export default function Blog() {
                                         <li><i><FaRegCalendarAlt/> </i>"May 4, 2019 "</li>
                                         <li><i><FaRegComment/></i> "5"</li>
                                     </ul>
-                                    <h5>6 ways to prepare breakfast for 30</h5>
+                                    <h5><a href='#'>6 ways to prepare breakfast for 30 </a></h5>
                                     <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaera</p>
                                 </div>  
                             </div>
@@ -57,7 +57,7 @@ export default function Blog() {
                                         <li><i><FaRegCalendarAlt/> </i>"May 4, 2019 "</li>
                                         <li><i><FaRegComment/></i> "5"</li>
                                     </ul>
-                                    <h5>Visit the clean farm in the US</h5>
+                                    <h5><a href='#'>Visit the clean farm in the US </a></h5>
                                     <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
                                 </div>
                           </div>

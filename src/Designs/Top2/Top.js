@@ -4,6 +4,7 @@ import { AiFillMail} from 'react-icons/ai';
 import {FaFacebookF, FaTwitter , FaLinkedin , FaPinterestP, FaUserAlt} from 'react-icons/fa';
 import { social } from './top2Data';
 import './top.css'
+import { Link } from 'react-router-dom';
 
 export default function() {
 
@@ -23,7 +24,7 @@ export default function() {
                             const { id, url, icon } = socialIcon;
                             return (
                             <li key={id}>
-                            <a href={url}>{icon}</a>
+                            <Link to={url}>{icon}</Link>
                             </li>
                         ); 
                         })}

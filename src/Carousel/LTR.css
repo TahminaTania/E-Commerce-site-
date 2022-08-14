@@ -6,6 +6,7 @@
 display: flex;
 justify-content:space-between;
 align-items: center;
+margin-bottom: 40px;
 }
 
 .arrows span{
@@ -23,14 +24,22 @@ align-items: center;
 .latest-box{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    background-color: aliceblue;
+}
+.letest-container{
+    /* display: flex; */
+    overflow: hidden;
+    /* background-color: aqua; */
 }
 .letestP{
-    /* display: flex; */
-    /* width: 900px; */
+    display: flex;
     /* overflow: hidden; */
+    /* width: 900px; */ 
     /* flex-wrap: wrap; */
     background-color: aliceblue;
+    margin-bottom: 30px;
+    /* margin-top: 20px; */
 }
 .rated-info{
     width: 250px;

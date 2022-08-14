@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, Cart } from './top2Data';
 import logo from './logo.webp';
+import { Link , NavLink } from 'react-router-dom';
 
 const TopNav = () => {
   const [item,SetItem]=useState(150.00);
@@ -35,7 +36,7 @@ const TopNav = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <Link to={url}>{text}</Link>
                 </li>
               );
             })}
