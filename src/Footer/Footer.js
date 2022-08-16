@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPinterestP, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import logo from '../Designs/Top2/logo.webp';
+import Subscribe from '../Forms/Subscribe';
 import './Footer.css'
 
 export default function Footer() {
@@ -50,6 +51,7 @@ export default function Footer() {
                                 <h6>Join Our Newsletter Now</h6>
                                 <p>Get E-mail updates about our latest shop and special offers.</p>
                                 <div className='subscribe'>
+                                    <Subscribe/>
                                 </div> 
                                 <div className='social-links'>
                                         <a href='#'><FaFacebook/></a>

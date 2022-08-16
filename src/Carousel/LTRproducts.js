@@ -58,6 +58,7 @@ export default function LTRproducts() {
                       );
                     })}
             </div>
+            <Carousel/>
             {/* Letest Row */}
           </div>
         </div>
