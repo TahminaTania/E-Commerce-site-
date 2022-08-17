@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rated, Rated2 ,Rated3,Typed} from './LTRdata';
+import {TopRated, TopRated2 , TopRated3} from './LTRdata';
 import './LTR.css';
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 import { motion } from "framer-motion";
@@ -34,7 +34,7 @@ export default function Carousel() {
       
                    <div className='typed'> 
                                 <div>
-                                  <h3>Latest Products </h3>
+                                  <h3>Top Rated Products</h3>
                                 </div>
                                 <div className='arrows'>
                                   <span onClick={nextSlide}><AiOutlineLeft/></span>
@@ -47,7 +47,7 @@ export default function Carousel() {
                        <motion.div  ref={Container} className="letest-container" >
                           <motion.div   drag="x" dragConstraints={{ right:0, left: -Boxwidth }} className='col-md-12'> 
                            <div ref={carousel} className='letestP'>
-                                {Rated.map((rate) => {
+                                {TopRated.map((rate) => {
                                 const { id,title,img,price} =rate;
                                 return (
                                   <motion.div  className='latest-box' key={id}>
@@ -63,7 +63,7 @@ export default function Carousel() {
                                 })} 
                               </div>
                               <div className='letestP'>
-                                {Rated2.map((rate) => {
+                                {TopRated2.map((rate) => {
                                 const { id,title,img,price} =rate;
                                 return (
                                   <motion.div  className='latest-box' key={id}>
@@ -79,7 +79,7 @@ export default function Carousel() {
                                 })} 
                               </div>  
                               <div className='letestP'>
-                                {Rated3.map((rate) => {
+                                {TopRated3.map((rate) => {
                                 const { id,title,img,price} =rate;
                                 return (
                                   <motion.div  className='latest-box' key={id}>

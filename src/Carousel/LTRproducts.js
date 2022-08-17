@@ -3,37 +3,15 @@ import { Rated, Rated2 ,Rated3,Typed} from './LTRdata';
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 import './LTR.css'
 import Carousel from './Carousel';
+import TopRated from './TopRated';
+import Reviewed from './Reviewed'
 import { motion } from "framer-motion";
 import { useEffect,useState,useRef  } from 'react';
 import { slidesOnLeft } from 'react-slick/lib/utils/innerSliderUtils';
 
 
 export default function LTRproducts() {
-  // const [index,setCutternIndex] =useState(0);  
-  // const [ Boxwidth, SetBoxWidth ] = useState(0);
-  // const Container =useRef();
-
-  //  useEffect(()=> {
-  //   SetBoxWidth(Container.current.scrollWidth- Container.current.offsetWidth )
-  // },[]);
-
-  // const prevSlide =() =>{
-  //   console.log("Previous");
-  //   const isFirstSlide =index=== Rated.length-1;
-  //   const newIndex = isFirstSlide ? 0 : index+1;
-  //   setCutternIndex(newIndex)
-
-  //   }
-
-  //   const nextSlide =() =>{
-  //     console.log("Next");
-  //     const isFirstSlide =index===0
-  //     const newIndex = isFirstSlide ? Rated.length-1 : index-1
-  //     setCutternIndex(newIndex)
-        
-  //   }
-
-
+  
   return (
 
     <section>
@@ -41,25 +19,10 @@ export default function LTRproducts() {
         <div className='row'>
           <div className='col-md-12'>
             <div className='row'>
-                {Typed.map((typed) => {
-                    const { id,title} =typed;
-                    return (
-                      <div className='col-md-4 typed' key={id}> 
-                                <div>
-                                  <h3> {title}</h3>
-                                </div>
-                                <div className='arrows'>
-                                  <span onClick={''}><AiOutlineLeft/></span>
-                                  <span onClick={''}><AiOutlineRight/></span>
-                                </div>                       
-                                 
-                      </div>
-                      
-                      );
-                    })}
+              <div className='col-md-4'><Carousel/></div>
+              <div className='col-md-4'><TopRated/></div>
+              <div className='col-md-4'><Reviewed/></div>      
             </div>
-            <Carousel/>
-            {/* Letest Row */}
           </div>
         </div>
       </div>

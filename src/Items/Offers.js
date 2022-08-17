@@ -4,8 +4,8 @@ import './products.css';
 
 export default function Offers() {
   return (
-    <div className='container'>
-        <div className='row mt-3 mb-5'>
+    <div className='container mt-5 mb-5'>
+        <div className='row mt-5 mb-5'>
             <div className='col-md-12'>
                 <div className='row offers'>
                     <div className='col-md-6 Summer_fruits'></div>

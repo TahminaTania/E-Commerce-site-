@@ -12,6 +12,12 @@ export default function Blog() {
     <section>
         <div className='container blogs'>
             <div className='row'>
+                    <div className='menu section'>
+                       <div className='title'>
+                          <h2>From The Blog</h2>
+                          <div className='underline'></div>
+                        </div>
+                     </div>
                 <div className='col-md-12'>
                     <div className='row'>
                         <div className='col-md-4'>

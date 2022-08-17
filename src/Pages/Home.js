@@ -7,7 +7,7 @@ import AllDept from '../Designs/Top2/AllDept';
 import Offers from '../Items/Offers';
 import Motion from '../Designs/SideBar/Motion';
 import Blog from '../Designs/Blog/Blog';
-import LTRproducts from '../Carousel/LTRproducts'
+import LTRproducts from '../Carousel/LTRproducts';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <Motion/>
         <Products/>
         <Offers/>
-       {/* <LTRproducts /> */}
+       <LTRproducts/>
         <Blog/>
     </section>
   )

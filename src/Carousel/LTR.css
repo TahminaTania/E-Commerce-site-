@@ -1,5 +1,6 @@
 .ltr{
-    background-color: rgb(219, 219, 218);
+    /* background-color: rgb(219, 219, 218); */
+    background-color: white;
 }
 
 .typed{
@@ -27,9 +28,12 @@ margin-bottom: 40px;
     /* margin-bottom: 40px; */
     background-color: aliceblue;
 }
+
 .letest-container{
     /* display: flex; */
     overflow: hidden;
+    scroll-behavior:smooth;
+
     /* background-color: aqua; */
 }
 .letestP{
@@ -43,7 +47,8 @@ margin-bottom: 40px;
 }
 .rated-info{
     width: 250px;
-    padding-left: 30px;
+    left:0;
+    /* padding-left: 30px; */
     margin:5px;
     /* background-color: aqua; */
     /* padding:10px 05px 25px 20px; */

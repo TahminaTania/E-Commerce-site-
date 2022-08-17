@@ -114,7 +114,7 @@ ul li,.billing div{
     background: rgb(97, 153, 14);
     font-weight: bolder;
     /* border: 2px solid green; */
-    color:black;
+    color:white;
     display: flex;
     align-items: center;
     justify-content: space-between;
