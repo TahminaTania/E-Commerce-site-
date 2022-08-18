@@ -31,30 +31,30 @@ const TopNav = () => {
           </button>
         </div>
         <div className='links-container' ref={linksContainerRef}>
-          <ul className='links' ref={linksRef}>
+          <div className='links' ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                <li key={id}>
+                <div  className='pageLink' key={id}>
                   <Link to={url}>{text}</Link>
-                </li>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </div>
-        <ul className='cart-icons'>
+        <div className='cart-icons'>
           {Cart.map((C) => {
             const { id, value, icon } = C;
             return (
-              <li key={id}>
+              <div key={id}>
                 <p>{icon}</p>
-              </li>
+              </div>
             );
           })}
-        </ul>
-        <ul>
-            <li>Item: ${item}</li>
-        </ul>
+        </div>
+        <div>
+            <div className='item-Cost'>Item: ${item}</div>
+        </div>
       </div>
     </nav>
   );

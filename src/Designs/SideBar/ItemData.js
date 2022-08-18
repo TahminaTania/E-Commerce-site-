@@ -42,6 +42,24 @@ const cetagories = [
         image:'./Images/vegtables.jpeg',      
       },
 
+      {
+        id: 1,
+        name: 'Cocktail',
+        title: '',
+        image:'./Images/Cocktail.jpg',
+      },
+      {
+        id: 2,
+        name: 'Dried Fruits',
+        title: '450/-',
+        image:'./Images/DryFruits.png',      
+      },
+      {
+        id: 3,
+        name: 'Fresh Fish',
+        title: '450/-',
+        image:'./Images/Fish.png',    
+      },
   ];
   
   export default cetagories;

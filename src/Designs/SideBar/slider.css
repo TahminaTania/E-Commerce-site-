@@ -1,20 +1,43 @@
+
 .Container-M{
-    /* background-color: rgb(199, 200, 208); */
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: fit-content;
     margin-top: 150px;
-    height: fit-content;
-    display: grid;
-    width:100%;
+    margin-bottom: 150px;
+    position: relative;
+
+  
+}
+.arrow{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px 5px;
+    margin: 0px 10px;
+    background-color: rgb(241, 239, 234);
+    border: 1px solid rgb(207, 205, 205);
+    cursor: pointer;
+}
+
+.Container2-M{
+    /* background-color: rgb(37, 43, 90); */
+    height: 50vh;
+    width:90vw;
+    display:flex;
     overflow: hidden;
 }
 .Box-M{
     display: flex;
     /* background-color: aqua; */
     margin: 10px;
-    width: calc(250px * 18);
-    animation: scroll 10s linear infinite; 
+    width:fit-content;
+    /* overflow: hidden; */
+    /* width: calc(250px * 18); 
+    animation: scroll 10s linear infinite;  */
 }
 
-/* Ato scroll */
+/* Auto scroll */
 @keyframes scroll {
     0%{
         transform: translateX(0);

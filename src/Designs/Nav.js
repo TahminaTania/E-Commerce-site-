@@ -4,11 +4,11 @@ import {AiOutlineMenu} from 'react-icons/ai';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import AllDept from './Top2/AllDept';
 
-const Selections=styled.div`
-width:100%;
-height:60vh;
-margin-top:10px;
-`;
+// const Selections=styled.div`
+// width:100%;
+// height:60vh;
+// margin-top:10px;
+// `;
 const AllDepartment=styled.div`
 width:250px;
 display:flex;
@@ -19,8 +19,8 @@ padding:10px;
 
 export default function Nav() {
   return (
-
-    <Selections className='mb-5'>
+<section>
+    <div className='mb-5'>
         <div className='container navC' >
             <div className='row'>
                 <div className='col-md-12'>
@@ -45,13 +45,15 @@ export default function Nav() {
                                                 <button type="button" class="btn-green">Search</button>
                                             </div>          
                                         </div>
-                                        <div className='col-md-3 contact'>
-                                            <div className='phn-icon'>
-                                                <BsFillTelephoneFill/>
-                                            </div>
-                                            <div className='cust-Serv'>
-                                                <h5>+65 11.188.888</h5>
-                                                <p>support 24/7 time</p>
+                                        <div className='col-md-3 '>
+                                            <div className='contact'>
+                                                <div className='phn-icon'>
+                                                    <BsFillTelephoneFill/>
+                                                </div>
+                                                <div className='cust-Serv'>
+                                                    <h5>+65 11.188.888</h5>
+                                                    <p>support 24/7 time</p>
+                                                </div>
                                             </div>
                              
                                         </div>
@@ -80,7 +82,8 @@ export default function Nav() {
                 </div>
             </div>
         </div>
-    </Selections>
+    </div>
+</section>
   )
 }
 

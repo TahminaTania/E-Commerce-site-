@@ -69,14 +69,14 @@ ul li,.billing div{
   }
   .phn-icon{
     color:green;
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgb(197, 197, 192);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 5px;
     border-radius: 50%;
   }
 .cust-Serv{
@@ -180,9 +180,12 @@ nav {
   .logo {
     height: 40px;
   }
+  .links .pageLink{
+    margin: 10px 20px;
+  }
   .links a {
     color: var(--clr-grey-3);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight:bold;
     text-decoration: none;
     text-transform: capitalize;
@@ -294,7 +297,9 @@ nav {
     background-color: white;
   }
   
-
+.item-Cost{
+  font-weight: bolder;
+}
 
 
 /*------------------ #### Cover */
