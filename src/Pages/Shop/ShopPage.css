@@ -1,0 +1,31 @@
+.Shop-Cover{
+    height: 30vh;
+    background-image: url('../../Bannaer/breadcrumb.jpg.webp');
+    background-size: cover;
+    color: aliceblue;
+}
+.Departments{
+    left: 0;
+    
+}
+.filtr-optn {
+    padding: 7px 0px;
+    font-size:15px;
+}
+.filtr-optn a{
+   text-decoration: none;
+   color: black;
+}
+
+.multi-range-slider{
+    display: flex;
+    position: relative; 
+    border: none;
+    border-radius: 10px;
+    box-shadow:none;
+
+}
+
+
+
+ 
