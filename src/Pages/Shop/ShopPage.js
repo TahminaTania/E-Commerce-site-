@@ -3,6 +3,7 @@ import Products from '../../Items/Products';
 import cover from '../../Bannaer/breadcrumb.jpg.webp';
 import './ShopPage.css'
 import Filters from './Filters';
+import SaleOff from './SaleOff';
 
 export default function ShopPage() {
   return (
@@ -17,7 +18,7 @@ export default function ShopPage() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-3'><Filters/></div>
-            <div className='col-md-9'></div>
+            <div className='col-md-9'><SaleOff/></div>
           </div>
 
         </div>

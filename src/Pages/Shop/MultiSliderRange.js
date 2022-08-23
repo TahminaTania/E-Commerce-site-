@@ -8,7 +8,7 @@ import  MultiRangeSlider from "multi-range-slider-react";
 
 export default function MultiSliderRange(){
 
-    const [minValue, set_minValue] = useState(0);
+    const [minValue, set_minValue] = useState(10);
     const [maxValue, set_maxValue] = useState(500);
     const handleInput = (e) => {
         set_minValue(e.minValue);
@@ -16,26 +16,31 @@ export default function MultiSliderRange(){
     };
 
 return (
-	<div className="">
-		<MultiRangeSlider 
-           baseClassName="multi-range-slider"
-			min={0}
-			max={100}
-			step={5}
-			ruler={false}
-			label={false}
-			preventWheel={false}
-			minValue={minValue}
-			maxValue={maxValue}
-			onInput={(e) => {
-				handleInput(e);
-			}}
-		/>
-
-        <div>{minValue}</div>
-        <div>{maxValue}</div>
-        
-	</div>
+	<section>
+		<div className="price-page mt-5">
+			<h2>Price</h2>
+			<MultiRangeSlider 
+			    baseClassName="multi-range-slider rngSldr" 
+				min={10}
+				max={500}
+				step={5}
+				ruler={false}
+				label={false}
+				preventWheel={false}
+				minValue={minValue}
+				maxValue={maxValue}
+				onInput={(e) => {
+					handleInput(e);
+				}}
+			/>
+			<div className="price-value mt-2">
+			<div>${minValue}</div>
+			<div> - </div>
+			<div>${maxValue}</div>
+			</div>
+			
+		</div>
+	</section>
 	);
 }
     
