@@ -191,22 +191,53 @@ input[type='radio']#green:checked:after {
 
 
 /* ##### ----------------Sale OFF */
+.saleoff-header h1{
+    letter-spacing: 0.1px;
+    font-family:serif;
+    font-weight: bolder;
+}
+.line{
+    height: 4px;
+    background-color: rgb(3, 155, 3);
+    width: 130px;
+    /* margin: 20px; */
+}
 .saleoff-cont{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: cyan;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .saleoff-box{
     margin: 10px;
 }
+
 /* .sale-box{
     background-color: #b68325;
     width: fit-content;
 } */
 .sale-box img{
-    object-fit: cover;  
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain;   */
+}
+
+.off-per{
+    /* opacity: 1; */
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color:red;
+    color: white;
+    font-size: small;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* top: 50px; */
+    /* bottom: 50px; */
 }
 .sale-icon{
     font-size: 25px;
@@ -243,4 +274,64 @@ input[type='radio']#green:checked:after {
     color: gray;
     font-size: smaller;
     
+}
+
+.SaleB {
+    font-family: sans-serif;
+    padding: 0px 0px;
+  }
+  
+  /* .SaleB > div {
+    background-color: #5c2e91;
+    background-color: #fff;
+    color: #fff;
+    color: #3498db;
+    text-align: center;
+  } */
+
+  .slick-dots li button:before
+    {
+        /* margin-top: 40px; */
+        font-size: 15px;
+        line-height: 20px;
+    
+    }
+
+
+
+    /* ### ---------------------FOUND PRODUCT PAGE */
+
+.found-product{
+    border-top: 1px solid rgb(189, 188, 188) ;
+    margin-top: 90px;
+}
+
+.icon{
+    font-size: 20px;
+    padding-left: 15px;
+    color: gray;
+    cursor: pointer;
+}
+.sortBy select{
+    border: none;
+    font-weight: bolder;
+}
+.sortBy select option{
+    border: none;
+    background-color: aliceblue;
+}
+/* .sorted-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.sorted-box img{
+    height: 200px;
+    width: 200px;
+    background-color: whitesmoke;
+
+}
+.sorted-price{
+    font-weight: bolder;
+    color: black;
 }
