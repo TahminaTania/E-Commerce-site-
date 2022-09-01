@@ -5,6 +5,7 @@ import { GoLocation } from 'react-icons/go';
 import { BiTimeFive } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import Map from './Map';
+import SendMsg from '../../Forms/SendMsg'
 
 
 export default function ContactPage() {
@@ -46,6 +47,10 @@ export default function ContactPage() {
 
         <div className='map'>
           <Map/>
+        </div>
+        <div className='send-msg'>
+          <SendMsg/>
+
         </div>
 
     </section>
