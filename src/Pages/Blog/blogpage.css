@@ -1,0 +1,33 @@
+.blogPic img{
+    height: 250px;
+    width: 340px;
+    margin-bottom: 20px;
+}
+
+.blogitems div{
+        font-size: 16px;
+        color: #b2b2b2;
+        list-style: none;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 20px;
+}
+
+.blg-ttl h5 a{
+    margin: 0;
+    color: #111111;
+    font-weight: 900;
+    font-family: "Cairo", sans-serif;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.blg-dscrp p{
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 45px;
+ 
+}

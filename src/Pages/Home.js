@@ -7,6 +7,7 @@ import AllDept from '../Designs/Top2/AllDept';
 import Motion from '../Designs/SideBar/Motion';
 import Blog from '../Designs/Blog/Blog';
 import LTRproducts from '../Carousel/LTRproducts';
+import SaleOff from './Shop/SaleOff';
 
 export default function Home() {
   return (
