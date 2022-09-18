@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from '../../Carousel/Carousel';
 import Color from './Color';
-import MultiSliderRange from './MultiSliderRange';
+// import MultiSliderRange from './MultiSliderRange';
 import Size from './Size';
 
 export default function Filters() {
@@ -15,7 +15,7 @@ export default function Filters() {
                     <div className='filtr-optn'><a href='#'>{option}</a></div>
                 ))}
         </div>
-        <MultiSliderRange/>
+        {/* <MultiSliderRange/> */}
 
         <Color/>
         <Size/>

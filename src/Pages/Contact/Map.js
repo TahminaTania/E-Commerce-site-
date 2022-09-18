@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
 import { ImLocation2 } from 'react-icons/im';
 
 export default function Map() {
