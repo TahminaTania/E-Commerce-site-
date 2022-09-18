@@ -8,25 +8,25 @@ import blogpost from './Blogdata';
 import { useState } from 'react';
 
 
-const allCategories=['all', ...new Set(blogpost.map((blog)=> blog.cetagory))];
-console.log("all category",allCategories);
+const allCateg=['all', ...new Set(blogpost.map((blog)=> blog.category))];
+console.log("all category",allCateg);
 
 export default function Options() {
 
-    const [blog,setBlog]=useState(blogpost);
-    const [categories, setCategories]=useState(allCategories);
-    const [totalCatag, setTotalCetag]=useState(blog.length);
+    const [categBlog,setCategBlog]=useState(blogpost);
+    const [categories, setCategories]=useState(allCateg);
+    const [totalCatag, setTotalCetag]=useState(categBlog.length);
   
   
-    const filterCetagory =(category)=>{
+    const filterCetagory =(category,e)=>{
+
       if(category=== 'all'){
-        setBlog(blogpost);
+        setCategBlog(blogpost(blogpost.length));
         setTotalCetag(blogpost.legth)
         return;
       }
-      const newBlog =blogpost.filter((blog)=> blog.category ===category);
-      setBlog(newBlog)
-      setTotalCetag(newBlog.length)
+    const newBlog =blogpost.filter((blog)=> blog.category === category);
+        setCategBlog(newBlog)    
     }
   
 
@@ -44,16 +44,21 @@ export default function Options() {
                     <div className='mt-5'>
                        <div className={classes.title}>
                                 <h4>Categories</h4>
-                            </div>
+                        </div>
+                        <div>
+                            {/* <Cetagories categories={categories} filterCetagory={filterCetagory} totalCatag={totalCatag}/> */}
                             <div className={classes.blogCetag}>
-                            {categories.map((category,index) =>{
-                            return <div>
-                                <button type='button' className='filter-btn' onClick={()=> filterCetagory(category)} key={index}>
-                                {category}({category.length})
-                            </button>
+                                {categories.map((category,index) =>{
+                                return <div>
+                                    <div type='button' className='filter-btn' onClick={(e)=> filterCetagory(category)} key={index}> 
+                                        <span>{category}</span>
+                                        <span>({(category=== 'all')? (blogpost.length): (blogpost.filter((blog)=> blog.category === category).length)})</span>
+                                    </div>
+                                
+                                </div>
+                                })} 
+                                
                             </div>
-                            })}
-                            
                         </div>
                     </div>
                     <div className='mt-5'>
@@ -66,9 +71,10 @@ export default function Options() {
                 </div>
 
         
-                    <div className='col-md-8'>
-                       <Blogs blogpost={blog}/>
-                    </div>
+                <div className='col-md-8'>
+                    <Blogs blogpost={categBlog}/>
+                </div>
+
             </div>
         </div>
 

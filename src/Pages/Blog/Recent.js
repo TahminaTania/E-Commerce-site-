@@ -9,8 +9,8 @@ export default function Recent() {
             <h4>Recent News</h4>
         </div>
         <div className='container'>
-            <div className='col-md-12'>
-            {blogpost.slice(3,6).map((blog) => (
+            <div className='col-md-12 mt-5'>
+            {blogpost.slice(10,14).map((blog) => (
                 <div className='row rectnt-blog'> 
                         <div className='col-md-4 recent-news'><img src={blog.image}></img></div>
                         <div className='col-md-8'>

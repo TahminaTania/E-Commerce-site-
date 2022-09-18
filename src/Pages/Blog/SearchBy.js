@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import classes from './Blog.module.css'
 
 export default function SearchBy() {
   return (
         <section>
         <div className='size-page mt-5'>
-            <h2>Search By: </h2>
+              <div className={classes.title}>
+                <h4>Search By</h4>
+              </div>
             <div className='sizes'>
                 <div>Apply</div>
                 <div>Beauty</div>
