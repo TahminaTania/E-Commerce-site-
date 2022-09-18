@@ -1,6 +1,7 @@
 import React from 'react';
 import Blog from '../../Designs/Blog/Blog';
 import Blogs from './Blogs';
+import Options from './Options';
 
 export default function BlogPage() {
   return (
@@ -14,8 +15,11 @@ export default function BlogPage() {
 
           <div className='container'>
             <div className='row'>
-              <div className='col-4'></div>
-              <div className='col-8'><Blogs/></div>
+              <Options/>
+
+              {/* <div className='col-4'><Options/></div>
+              <div className='col-8'><Blogs/></div> */}
+              
             </div>
           </div>
         

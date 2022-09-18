@@ -31,3 +31,23 @@
     margin-bottom: 45px;
  
 }
+
+.rectnt-blog{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0%;
+}
+.recent-news img{
+    height: 90px;
+    width: 90px;
+}
+.recent-header h6{
+    font-weight: bolder;
+    color: #111111;
+    letter-spacing: 0.001px;
+}
+.recent-date p{
+    font-weight: light;
+    color: rgb(160, 155, 155);
+    letter-spacing: 0.1px;
+}

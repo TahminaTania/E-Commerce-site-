@@ -6,7 +6,7 @@ import {FiMessageCircle,FiCalendar} from 'react-icons/fi';
 // import ShowMore from 'react-show-more-button/dist/module';
 
 
-export default function Blogs() {
+const Blogs =({blogpost})=> {
     
   return (
     <div>
@@ -34,3 +34,4 @@ export default function Blogs() {
   )
 }
 
+export default Blogs

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title h4{
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: "Cairo",sans-serif;
+}
+.src{
+    background-color: white;
+    height: 45px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: inline;
+}
+.src input{
+    background-color:white;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(168, 165, 165);
+    border-radius: 20px;
+}
+.SrcIcn{
+    font-size:30px;
+    color: rgb(168, 165, 165);
+    font-weight: bold;
+    margin-left: -40px;
+}
+.blogCetag{
+    font-size: larger;
+    font-weight: bolder;
+}
