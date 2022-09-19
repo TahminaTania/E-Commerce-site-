@@ -5,13 +5,11 @@ import { ClassNames } from '@emotion/react';
 import classes from './Blog.module.css'
 
 
-// const allCategories=['all', ...new Set(blogpost.map((blog)=> blog.cetagory))];
-// console.log("all category",allCategories);
 
 
-export default function Cetagories({categories,filterCetagory,totalCatag}) {
 
-  //const [totalCatag, setTotalCetag]=useState(TotalLength);
+export default function Cetagories({categories,filterCetagory}) {
+
 
   return (
     <div>
@@ -19,7 +17,8 @@ export default function Cetagories({categories,filterCetagory,totalCatag}) {
         {categories.map((category,index) =>{
           return <div>
             <button type='button' className='filter-btn' onClick={()=> filterCetagory(category)} key={index}>
-            {category}({totalCatag})
+            <span>{category}</span>
+            <span>({(category=== 'all')? (blogpost.length): (blogpost.filter((blog)=> blog.category === category).length)})</span>
           </button>
           </div>
         })}

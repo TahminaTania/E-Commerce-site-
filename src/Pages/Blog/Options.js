@@ -6,7 +6,7 @@ import Recent from './Recent';
 import SearchBy from './SearchBy';
 import blogpost from './Blogdata';
 import { useState } from 'react';
-
+// import Cetagories from './Cetagories'
 
 const allCateg=['all', ...new Set(blogpost.map((blog)=> blog.category))];
 console.log("all category",allCateg);
@@ -47,6 +47,8 @@ export default function Options() {
                         </div>
                         <div>
                             {/* <Cetagories categories={categories} filterCetagory={filterCetagory} totalCatag={totalCatag}/> */}
+
+
                             <div className={classes.blogCetag}>
                                 {categories.map((category,index) =>{
                                 return <div>
@@ -56,9 +58,9 @@ export default function Options() {
                                     </div>
                                 
                                 </div>
-                                })} 
-                                
+                                })}     
                             </div>
+                            
                         </div>
                     </div>
                     <div className='mt-5'>
