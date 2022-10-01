@@ -48,13 +48,14 @@ const Blogs =({blogpost})=> {
                         
                             <div className='blg-ttl'><h5><a href='#'>{blog.title}</a></h5></div>
                               <div className='blg-dscrp'>
-                              {/* <ShowMoreBtn description={blog.description}/> */}
+                              {/* <ShowMoreBtn description={blog.description}/> 
+                              that' the standard way but if you want to minimize pages the try bellow one*/}
                                 
                                 <div onClick={() => show(blog.id)}> 
                                   <div> {(showMore === blog.id) && flag ? blog.description : `${blog.description.substring(0,30)}`}</div>
                                   <div className="mt-3 show-btn">{(showMore === blog.id) && flag ? 'Show Less': 'Show More'} <span><BsArrowRight/></span></div>
                                 </div>
-
+                              {/* by this process i don't need another page to write code and call component, i can work in here.  */}
                               </div>
                         </div>
 
