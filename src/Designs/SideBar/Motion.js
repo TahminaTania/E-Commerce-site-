@@ -2,8 +2,9 @@ import React from 'react';
 import cetagories from './ItemData';
 import {motion} from 'framer-motion';
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
+import { Link , NavLink } from 'react-router-dom';
 import { useEffect,useState,useRef  } from 'react';
-import './slider.css'
+import classes from './Slider.module.css'
 
 export default function Motion() {
     const [ slideWidth, SetSlideWidth ] = useState(0);
@@ -23,35 +24,36 @@ export default function Motion() {
 
 const prevSlide =(e) =>{
   console.log("PREVIOUS");
-  if (Carousel.current.scrollWidth != Carousel.current.offsetWidth){
-    Carousel.current.scrollLeft += Carousel.current.offsetWidth/2;  
-  }
+  // if (Carousel.current.scrollWidth != Carousel.current.offsetWidth){
+   Carousel.current.scrollLeft += Carousel.current.offsetWidth/2;  
+  // }
   
 } 
 
 
   return (
     <section >
-      <div className='Container-M '>
-        <div className='arrow' onClick={prevSlide}><AiOutlineLeft/> </div>
-        <div className='Container2-M'>
-            <motion.div  ref= {Carousel} className='Container2-M'>
-                <motion.div drag="x" dragConstraints={{ right:0, left:-slideWidth/1.5 }} className='Box-M'>
+      <div className={classes.ContainerM}>
+        <div className={classes.arrowL} onClick={prevSlide}><AiOutlineLeft/></div>
+        <div className={classes.Container2M}>
+            <motion.div  ref= {Carousel} className={classes.Container2M}>
+                <motion.div drag="x" dragConstraints={{ right:0, left:-slideWidth/1.5 }} className={classes.BoxM}>
                     {cetagories.map((cetagories) => {
-                            const { id,name,price,image } = cetagories;
+                            const { id,name,url,image } = cetagories;
                             return (
-                              <div className='back-box' key={id}>
-                                <div className='img-box'>
+                              <div className={classes.backBox} key={id}>
+                                <div className={classes.imgBox}>
                                   <img src={image}></img>
-                                  <span className='img-name'><a href='#'>{name}</a></span>                   
+                                  <span className={classes.imgName}><Link to={url}>{name}</Link></span>                   
                                 </div>
                               </div>
+                            
                               );
                             })}
                 </motion.div>
             </motion.div>
           </div>
-          <div className='arrow' onClick={nextSlide}><AiOutlineRight/> </div>
+          <div className={classes.arrowR} onClick={nextSlide}><AiOutlineRight/> </div>
       </div>
     </section>
   )

@@ -45,15 +45,6 @@ ul li,.billing div{
     
 }
 
-.logIn, .select{
-    padding: 0px 20px;
-    border-left:1px solid  #d1c6c6;
-    /* padding-left:50px ; */
-}
-.logIn a{
-    text-decoration: none;
-    color:black;
-}
 
 .btn-green{
     background: rgb(97, 153, 14);
@@ -103,6 +94,7 @@ ul li,.billing div{
     height: 100%;
     /* margin: 100px auto; */
     position: relative;
+
 }
 .dd-icon{
     color: white;
@@ -119,6 +111,7 @@ ul li,.billing div{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    
 }
 .dd .dd-content{
     /* position: absolute; */
@@ -129,14 +122,15 @@ ul li,.billing div{
     font-weight: 30px;
     width: 100%;
     height: 100%;
-    margin-bottom:10px ;
-    transition: 0.1s;
+    margin-bottom:10px;
+    transition: all 1.5s ease-in;
 }
+
 
 .dd .dd-content .dd-item{
     padding: 5px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 1.5s ease-in;
 }
 .dd-item:hover{
     background-color:rgb(97, 153, 14);
@@ -178,7 +172,8 @@ nav {
     transform: rotate(90deg);
   }
   .logo {
-    height: 40px;
+    height: 50px;
+    width: 200px;
   }
   .links .pageLink{
     margin: 10px 20px;
@@ -252,19 +247,38 @@ nav {
       color: var(--clr-primary-7);
     }
   }
-  
+ .informations{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ } 
   .cart-icons{
     display: flex;
     font-size: 1.5rem;
+    flex:1;
   }
   .cart-icons p{
     margin: 0 0.5rem; 
     color: #222;
   }
   .cart-icons p:hover{
-    color: var(--clr-primary-7);
+    color: rgb(97, 153, 14);
   }
   
+.logIn a{
+  text-decoration: none;
+  color:black;
+  font-weight: bolder;
+  flex:1;
+}
+.userIcn{
+font-size: 25px;
+}
+.userIcn:hover{
+font-size: 28px;
+color: rgb(97, 153, 14);
+}
   option:not(:checked) {
     background-color: rgb(97, 153, 14);
   }

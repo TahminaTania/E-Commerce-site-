@@ -1,5 +1,4 @@
 import './App.css';
-import Top from './Designs/Top2/Top';
 import TopNav from './Designs/Top2/TopNav';
 import Footer from './Footer/Footer';
 import Home from './Pages/Home';
@@ -7,6 +6,8 @@ import BlogPage from './Pages/Blog/BlogPage';
 import ShopPage from './Pages/Shop/ShopPage';
 import ContactPage from './Pages/Contact/ContactPage';
 import { BrowserRouter as Router, Route , Routes } from 'react-router-dom';
+import Size from './Pages/Shop/Size';
+import Color from './Pages/Shop/Color';
 
 
 
@@ -15,7 +16,6 @@ function App() {
     <main>
       <Router>
         <div className=''>
-          <Top/>
           <TopNav/>
 
              <Routes>
