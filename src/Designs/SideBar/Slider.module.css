@@ -1,0 +1,96 @@
+
+.ContainerM{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.arrowR,.arrowL{
+    height: 70px;
+    width: 40px;
+    background-color:rgba(218, 216, 216, 0.884);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+.arrowL{
+    left: 10px;
+}
+.arrowR{
+    right: 10px;
+}
+
+.Container2M{
+    /* background-color: rgb(37, 43, 90); */
+    height: 100%;
+    width:100vw;
+    margin: 10px;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.BoxM{
+    display: flex;
+    /* background-color: aqua; */
+    margin: 10px;
+    width:fit-content;
+    width: calc(250px * 18); 
+    animation: scroll 10s linear infinite; 
+}
+
+/* Auto scroll */
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc (-250px*9));
+    }
+    
+}
+.imgName{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px;
+}
+.imgBox a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 10px;
+    background-color: white;
+}
+.backBox{
+margin: 20px;
+
+}
+.imgBox{
+    justify-content: center;
+    background-color: rgb(236, 233, 226);
+    
+}
+.imgBox img{
+    height: 200px;
+    width: 300px;
+    padding-bottom: 10px;
+    /* display: block; */
+
+}
+

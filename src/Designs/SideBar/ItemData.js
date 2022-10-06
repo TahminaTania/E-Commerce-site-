@@ -2,64 +2,46 @@ const cetagories = [
     {
       id: 1,
       name: 'Cocktail',
-      title: '',
-      image:'./Images/Cocktail.png',
+      url:'/cocktail',
+      image:'./Images/cocktails.jpeg',
     },
     {
       id: 2,
       name: 'Dried Fruits',
-      title: '450/-',
+      url:'/Dry-Fruits',
       image:'./Images/DryFruits.png',      
     },
     {
       id: 3,
       name: 'Fresh Fish',
-      title: '450/-',
+      url:'/fish',
       image:'./Images/Fish.png',    
     },
     {
         id: 4,
         name: 'Fresh Fruits',
-        title: '450/-',
+        url:'',
         image:'./Images/Fruits.jpeg',      
       },
       {
         id: 5,
         name: ' Fresh Meats',
-        title: '450/-',
+        url:'/meats',
         image:'./Images/Meats.jpeg',      
       },
       {
         id: 6,
         name: 'Soft Drinks',
-        title: '450/-',
-        image:'./Images/softdrink.png',      
+        url:'/drinks',
+        image:'./Images/SoftDrinks.jpeg',      
       },
       {
         id: 7,
         name: 'Fresh Vegtables',
-        title: '450/-',
-        image:'./Images/vegtables.png',      
-      },
+        url:'/vegtable',
+        image:'./Images/vegtables.jpeg',      
+      }
 
-      {
-        id: 1,
-        name: 'Cocktail',
-        title: '',
-        image:'./Images/Cocktail.png',
-      },
-      {
-        id: 2,
-        name: 'Dried Fruits',
-        title: '450/-',
-        image:'./Images/DryFruits.png',      
-      },
-      {
-        id: 3,
-        name: 'Fresh Fish',
-        title: '450/-',
-        image:'./Images/Fish.png',    
-      },
   ];
   
   export default cetagories;

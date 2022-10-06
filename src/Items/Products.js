@@ -13,14 +13,15 @@ function Products() {
   const [menuItem,setMenuItems]=useState(items);
   const [categories, setCategories]=useState(allCategories);
 
-  const filterItems =(category,e)=>{
-
+  const filterItems =(category)=>{
     if(category=== 'all'){
       setMenuItems(items)
       return;
     }
-  const newItems =items.filter((item)=> item.category === category);
-      setMenuItems(newItems)    
+    const newItems =items.filter((item)=> item.category ===category);
+
+    setMenuItems(newItems)
+
   }
 
 
