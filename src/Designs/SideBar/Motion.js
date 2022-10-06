@@ -31,9 +31,9 @@ const prevSlide =(e) =>{
 
 
   return (
-    <section >
-      <div className='Container-M '>
-        <div className='arrow' onClick={prevSlide}><AiOutlineLeft/> </div>
+    <section className='container'>
+      <div className='Container-M'>
+        <div className='arrow arrowL' onClick={prevSlide}><AiOutlineLeft/> </div>
         <div className='Container2-M'>
             <motion.div  ref= {Carousel} className='Container2-M'>
                 <motion.div drag="x" dragConstraints={{ right:0, left:-slideWidth/1.5 }} className='Box-M'>
@@ -51,7 +51,7 @@ const prevSlide =(e) =>{
                 </motion.div>
             </motion.div>
           </div>
-          <div className='arrow' onClick={nextSlide}><AiOutlineRight/> </div>
+          <div className='arrow arrowR' onClick={nextSlide}><AiOutlineRight/> </div>
       </div>
     </section>
   )

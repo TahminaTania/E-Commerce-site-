@@ -3,7 +3,7 @@ const cetagories = [
       id: 1,
       name: 'Cocktail',
       title: '',
-      image:'./Images/Cocktail.jpg',
+      image:'./Images/Cocktail.png',
     },
     {
       id: 2,
@@ -33,20 +33,20 @@ const cetagories = [
         id: 6,
         name: 'Soft Drinks',
         title: '450/-',
-        image:'./Images/SoftDrinks.jpeg',      
+        image:'./Images/softdrink.png',      
       },
       {
         id: 7,
         name: 'Fresh Vegtables',
         title: '450/-',
-        image:'./Images/vegtables.jpeg',      
+        image:'./Images/vegtables.png',      
       },
 
       {
         id: 1,
         name: 'Cocktail',
         title: '',
-        image:'./Images/Cocktail.jpg',
+        image:'./Images/Cocktail.png',
       },
       {
         id: 2,

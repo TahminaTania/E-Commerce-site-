@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars ,FaUserAlt } from 'react-icons/fa';
 import { links, Cart } from './top2Data';
-import logo from './logo.webp';
+import logo from './logo.png';
 import { Link , NavLink } from 'react-router-dom';
 
 const TopNav = () => {
@@ -53,7 +53,7 @@ const TopNav = () => {
           })}
         </div>
         <div>
-            <div className='item-Cost'>Item: ${item}</div>
+            <div className='logIn'><Link to="#"><span><FaUserAlt/></span>Log In</Link></div>
         </div>
       </div>
     </nav>

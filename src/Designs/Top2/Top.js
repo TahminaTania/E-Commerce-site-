@@ -12,23 +12,22 @@ export default function() {
     <section className='toppest'>
             <div className="left">
                 <div className='toppest-header'>
-                    <ul>
-                       <li className='header-mail'> <AiFillMail/> hello@colorlib.com</li>
-                       <li>Free Shipping for all Order of $99</li>
-                    </ul>
+                       <div className='header-mail'><span><AiFillMail/></span>hello@contat.com</div>
+                       <div className='header-offer'>Free Shipping for all Order of $99</div>
+                       <div></div>
                 </div>
             </div>
-            <div  className="center ">
-             <ul className='social-icons'>
+            <div  className="center">
+             <div className='social-icons'>
                         {social.map((socialIcon) => {
                             const { id, url, icon } = socialIcon;
                             return (
-                            <li key={id}>
+                            <div key={id}>
                             <Link to={url}>{icon}</Link>
-                            </li>
+                            </div>
                         ); 
                         })}
-                    </ul>
+                    </div>
             </div >
             
             <div  className="right">
@@ -38,9 +37,6 @@ export default function() {
                             <option value="1">English</option>
                             <option value="2">Bangla</option>
                     </select> 
-                </div>
-                <div className='logIn'>
-                  <span><a href='#'><FaUserAlt/> Log in</a></span> 
                 </div>
             </div >
         

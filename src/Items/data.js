@@ -31,18 +31,18 @@ const menu = [
     img: './Images/fruits/f1.png',
     
   },
-  {
-    id: 5,
-    title: 'Grilled Chicken',
-    category: 'Fast Food',
-    price: 20.99,
-    img: './Images/Fast Food/c2.png',
+  // {
+  //   id: 5,
+  //   title: 'Grilled Chicken',
+  //   category:'Fast Food',
+  //   price: 20.99,
+  //   img: './Images/Fast Food/c2.png',
     
-  },
+  // },
   {
     id: 6,
     title: 'Black berry',
-    category: 'Fruits',
+    category:'Fruits',
     price: 6.99,
     img: './Images/fruits/f3.png',
     
@@ -71,14 +71,14 @@ const menu = [
     
   },
  
-  {
-    id: 10,
-    title: 'Berry',
-    category: 'Fruits',
-    price: 8.99,
-    img: './Images/fruits/f7.png',
+  // {
+  //   id: 10,
+  //   title: 'Berry',
+  //   category: 'Fruits',
+  //   price: 8.99,
+  //   img: './Images/fruits/f7.png',
     
-  },
+  // },
   {
     id: 11,
     title: 'Chicken fries',
@@ -98,7 +98,7 @@ const menu = [
   {
     id: 13,
     title: 'Cherry',
-    category: 'Fruits',
+    category:'Fruits',
     price: 12.99,
     img: './Images/fruits/f8.png',
     
